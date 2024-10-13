@@ -1,0 +1,87 @@
+START
+   Input base
+   Input height
+   Set area = 0.5 * base * height
+   Output area
+END
+
+-Withdrawal
+START
+   Display "Enter your PIN:"
+   Input PIN
+
+   IF PIN is correct THEN
+      Display "Enter the amount to withdraw:"
+      Input amount
+
+      IF balance is greater than or equal to amount THEN
+         Subtract amount from balance
+         Display "Please take your cash."
+         Display "Transaction successful."
+      ELSE
+         Display "Insufficient balance."
+      ENDIF
+   ELSE
+      Display "Incorrect PIN."
+   ENDIF
+END
+
+-Fund transfer
+START
+   Display "Enter your PIN:"
+   Input PIN
+
+   IF PIN is correct THEN
+      Display "Enter the amount to transfer:"
+      Input amount
+
+      Display "Enter the recipient account number:"
+      Input recipientAccount
+
+      IF balance is greater than or equal to amount THEN
+         Subtract amount from your balance
+         Transfer amount to recipientAccount
+         Display "Transfer successful."
+      ELSE
+         Display "Insufficient balance."
+      ENDIF
+   ELSE
+      Display "Incorrect PIN."
+   ENDIF
+END
+
+-Balance inquiry
+START
+   Display "Enter your PIN:"
+   Input PIN
+
+   IF PIN is correct THEN
+      Display "Your current balance is: ", balance
+   ELSE
+      Display "Incorrect PIN."
+   ENDIF
+END
+
+-Pin change
+START
+   Display "Enter your current PIN:"
+   Input currentPIN
+
+   IF currentPIN is correct THEN
+      Display "Enter your new PIN:"
+      Input newPIN
+
+      Display "Confirm your new PIN:"
+      Input confirmNewPIN
+
+      IF newPIN is equal to confirmNewPIN THEN
+         Update the PIN to newPIN
+         Display "PIN change successful."
+      ELSE
+         Display "New PIN does not match. Please try again."
+      ENDIF
+   ELSE
+      Display "Incorrect current PIN."
+   ENDIF
+END
+
