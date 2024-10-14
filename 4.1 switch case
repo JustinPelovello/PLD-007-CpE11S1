@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int physics, biology, math, computer, chemistry;
+    float average;
+    char grade;
+    
+    cout<<"Enter marks for physics: ";
+    cin>>physics;
+    cout<<"Enter marks for biology: ";
+    cin>>biology;
+    cout<<"Enter marks for math: ";
+    cin>>math;
+    cout<<"Enter marks for computer: ";
+    cin>>computer;
+    cout<<"Enter marks for chemistry: ";
+    cin>>chemistry;
+    
+    switch(g)
+    {
+    	case 9:
+    	cout<<"A"<<endl;
+    	break;
+    	
+    	case 8:
+    	cout<<"B"<<endl;
+    	break;
+    	
+    	case 7:
+        cout<<"C"<<endl;
+        break;
+        
+        case 6:
+        cout<<"D"<<endl;
+        break;
+        
+        case 5:
+    	cout<<"F"<<endl;
+    	break;
+	}
+     
+}
